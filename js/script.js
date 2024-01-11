@@ -49,20 +49,18 @@ function clearContent(editFieldId) {
 
 
 function downloadAsPDF() {
-    // Get the element to be converted to PDF
+
     const cardSection = document.querySelector('.card_section');
   
-    // Calculate the actual height of the content, including overflow
-    const actualHeight = cardSection.scrollHeight + 100;
+    const actualHeight = cardSection.scrollHeight + 400;
   
-    // Create a new instance of html2pdf with adjustments for overflow
     const pdf = new html2pdf(cardSection, {
       margin: 10,
       filename: 'document.pdf',
       image: { type: 'jpeg', quality: 0.98 },
       html2canvas: {
         scale: 2,
-        height: actualHeight+ 50, // Capture the full height
+        height: actualHeight, // Capture the full height
       },
       jsPDF: {
         unit: 'mm',
