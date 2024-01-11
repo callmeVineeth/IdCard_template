@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="CSS/Style.css" />
+    <script src="/js/script.js"></script>
+
+<!-- Add this before the closing </body> tag -->
+<script src="https://rawgit.com/eKoopmans/html2pdf/master/dist/html2pdf.bundle.js"></script>
+
+  </head>
+  <body>
+    <div class="container">
+
+     <div class="card_section">
+        <section class="section__one">
+          <div class="header"></div>
+  
+          <div class="idCard_content">
+              <img src="/Images/photo1704729321.png" id="bg_image" alt="bgimg"/>  
+              <div class="details">
+                  <span class="details__content"
+                >Name <input id="name" class="input_field" />
+              </span>
+              <span class="details__content"
+                >A/c No <input id="accNo" class="input_field" />
+              </span>
+              <span class="details__content"
+                >IFSC <input id="ifsc" class="input_field" />
+              </span>
+              <span class="details__content"
+                >Cust ID<input id="custId" class="input_field" />
+              </span>
+              <span class="details__content"
+                >Adhaar <input id="adhaar" class="input_field" />
+              </span>
+              <span class="details__content"
+                >Address <textarea id="address" class="input_field"> </textarea>
+              </span>
+            </div>
+            <div class="photo">
+              <img
+                src="https://i.stack.imgur.com/Y1zJ1.jpg"
+                alt="upload photo " id="id_pic"
+              />
+            </div>
+          </div>
+          <div class="footer">Agent ID - 12345 Branch - Bagh</div>
+        </section>
+<!-- ljjjjjjjjjjjjjjjj -->
+
+
+        <section class="" id="section__one_second">
+          <div class="header" id="header_two"></div>
+  
+          <div class="idCard_content">
+                
+              <div class="details_two">
+                 Shri Gurukripa Online Services, Bagh<br>
+                 Mob -7047348747
+              </div>
+           
+          </div>
+          <div class="footer"></div>
+        </section>
+
+     </div>
+
+
+
+
+
+
+      <!--  - - -- - - -   - -->
+
+      <section class="section__two">
+        <h1> ADD / EDIT DETAILS</h1>
+        <div class="edit_section">
+          <span class="edit_detail">
+            <input id="edit_image" class="editing_field" placeholder="Enter Image url here" />
+            <button class="Btn" onclick="addContentFromEdit('edit_image','id_pic')">
+              Add
+            </button>
+            <button class="Btn" onclick="clearContent('edit_image')">Clear</button>
+          </span>
+
+
+          <span class="edit_detail">
+            <input id="edit_name" class="editing_field" placeholder="Name" />
+            <button class="Btn" onclick="addContentFromEdit('edit_name', 'name')">
+              Add
+            </button>
+            <button class="Btn" onclick="clearContent('edit_name')">Clear</button>
+          </span>
+          <span class="edit_detail">
+            <input
+              id="edit_accNo"
+              class="editing_field"
+              placeholder="Account Number"
+            />
+            <button class="Btn" onclick="addContentFromEdit('edit_accNo', 'accNo')">
+              Add
+            </button>
+            <button class="Btn" onclick="clearContent('edit_accNo')">Clear</button>
+          </span>
+          <span class="edit_detail">
+            <input id="edit_ifsc" class="editing_field" placeholder="IFSC" />
+            <button class="Btn" onclick="addContentFromEdit('edit_ifsc', 'ifsc')">
+              Add
+            </button>
+            <button class="Btn" onclick="clearContent('edit_ifsc')">Clear</button>
+          </span>
+          <span class="edit_detail">
+            <input
+              id="edit_custId"
+              class="editing_field"
+              placeholder="Customer ID"
+            />
+            <button class="Btn" onclick="addContentFromEdit('edit_custId', 'custId')">
+              Add
+            </button>
+            <button class="Btn" onclick="clearContent('edit_custId')">Clear</button>
+          </span>
+          <span class="edit_detail">
+            <input
+              id="edit_adhaar"
+              class="editing_field"
+              placeholder="Adhaar"
+            />
+            <button class="Btn" onclick="addContentFromEdit('edit_adhaar', 'adhaar')">
+              Add
+            </button>
+            <button class="Btn" onclick="clearContent('edit_adhaar')">Clear</button>
+          </span>
+          <span class="edit_detail">
+            <input
+              id="edit_address"
+              class="editing_field"
+              placeholder="Address"
+            />
+            <button class="Btn" onclick="addContentFromEdit('edit_address', 'address')">
+              Add
+            </button>
+            <button class="Btn" onclick="clearContent('edit_address')">Clear</button>
+          </span>
+        </div>
+        <button class="downloadBtn" onclick="downloadAsPDF()"> DOWNLOAD </button>
+      </section>
+    </div>
+  </body>
+</html>
