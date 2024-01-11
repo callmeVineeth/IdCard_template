@@ -42,8 +42,6 @@ textarea{
 .card_section{
     background-color: rgb(194, 185, 185);
     width: max-content;
-    height: 400px;
-    overflow-y: scroll;
     padding: 20px;
 }
 
