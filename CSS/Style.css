@@ -77,7 +77,7 @@ textarea{
     width:600px;
     height:335px;
     margin-top: 20px;
-    background-image: url('/Images/photo1704729321.png'); 
+    background-image: url('Images/photo1704729321.png'); 
     background-position: 120px 0px;
     background-color: rgb(72 61 140);
     background-clip: border-box;
@@ -124,7 +124,7 @@ width: 100%;
     background-color: rgb(72 61 140);
     height: 30%;
     width: 100%;
-    background-image: url('/Images/photo1704729310.jpeg');
+    background-image: url('Images/photo1704729310.jpeg');
     background-size: contain;
     background-position: center;
     background-repeat: no-repeat;
